@@ -61,7 +61,7 @@ memberships_query = <<SPARQL
   SELECT ?ps ?item ?itemLabel ?group ?groupLabel ?district ?districtLabel ?start ?end ?term ?termLabel ?termOrdinal
   {
     ?item p:P39 ?ps .
-    ?ps ps:P39/wdt:P279+ wd:Q21100241
+    ?ps ps:P39/wdt:P279+ wd:Q21100241 .
     ?ps pq:P2937 ?term .
     ?term p:P31/pq:P1545 ?termOrdinal .
     OPTIONAL { ?ps pq:P580 ?start }
